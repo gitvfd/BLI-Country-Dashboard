@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<meta http-equiv="content-type" content="text/html; charset=UTF8">
+<html>
+  <head>
+    <title>BLI Dashboard</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="css/dashboard.css">
+
+  </head>
+  <body>
+    
+    <img  id="logo" src="img/BLI-logo.png"></img>
+    <div id="intro">
+      <h2 id="intro">What do users of the <a href="http://www.oecdbetterlifeindex.org" target="_blank">OECD Better Life Index</a> think?</h2>
+      <p id="intro">Users of the website have rated 11 topics according to their importance. Select one of the country with the most answers and discover wonderful insights.</p>
+    </div>
+    <br>
+    <div ><span id="selectedCou">Total</span>: <span id="numberAnswerSelection"></span> <span id="wordDesign">responses</span></div>
+    <hr class="dotted">
+    <h1 class="title">Pick a country</h1>
+    <h2 class="subtitle">The bubble size tells you the number of responses for a country</h2>
+    <p class="explanation">Clicking on a country updates all the charts and provide you with interesting insights on some of the people living in this country.<br/>
+    The red squares indicate the proportion of answers coming from the selected country in the total number of responses to the Better Life Index</p>
+
+    <div class="bubbleDiv" id="bubble"></div>
+    
+      <div id="distriUserLegend"></div>
+      <div id="distriUser"></div>
+    <hr class="dotted">
+    <h1 class="title">Sex and Age distribution</h1>
+    <h2 class="subtitle">Number</h2>
+    <p class="explanation">Demographic profile of the people who have shared their index</p>
+    <div id="donutGenderDistri"></div>
+    <div id="barAgeDistri"></div>
+    <hr class="dotted">
+    <h1 class="title">Importance of the topics</h1>
+    <h2 class="subtitle">In percentage</h2>
+    <p class="explanation"></p>
+    <div class="keyFact">Shows you the relative importance of each topics for all of the users and the ones from the selected country<br/><img class="keyFactIcon" src="img/preferenceIcon.svg" alt="overtime"></div>
+    <div id="spiderPref"></div>
+    <hr class="dotted">
+    <h1 class="title">Relative importance over time</h1>
+    <h2 class="subtitle">In percentage</h2>
+    <p class="explanation"></p>
+    <div class="keyFact">See how the importance attributed to each topic evolves from one year to the other<Br><img class="keyFactIcon" src="img/timeIcon.svg" alt="overtime"></div>    
+    <div id="parallelYear"></div>
+    <hr class="dotted">
+    <h1 class="title">Relative importance of topics by age</h1>
+    <h2 class="subtitle">In percentage</h2>
+    <p class="explanation"></p>
+    <div class="keyFact">Show you how age can impact the relative importance of the topics <Br><img class="keyFactIcon" src="img/age2.svg" alt="overtime"></div>
+    <div id="parallelAge"></div>
+    <hr class="dotted">
+    <h1 class="title">Relative importance of topics by sex</h1>
+    <h2 class="subtitle">In percentage</h2>
+    <p class="explanation"></p>
+    <div class="keyFactGender">Show you how the sex can impact the relative importance of the topics <Br><img class="keyFactIcon" src="img/gender2.svg" alt="overtime"></div>
+    <div id="parallelGender"></div>
+    <hr class="dotted">
+      <h2 id="intro">You as well! Tell us what you think makes for a better life and share your preferences with us to help improve policies that really matter to you.    </h2>
+    <iframe id="embedBLI"  src="http://gitvfd.github.io/BLI-2016-EN" seamless></iframe>
+    <!-- OPTIONAL 
+    <br>
+    <img src="img/Flower_launch_GIF_V3.gif" alt="This will display an animated GIF" />
+    -->
+    <script src="js/radarChart.js"></script>
+    <script src="js/startAppli.js"></script>
+    <script src="js/updateData.js"></script>
+    <script src="js/donutGender.js"></script>
+    <script src="js/donutGenderUpdate.js"></script>
+    <script src="js/barAge.js"></script>
+    <script src="js/barAgeUpdate.js"></script>
+    <script src="js/ageParallel.js"></script>
+    <script src="js/ageParallelUpdate.js"></script>
+    <script src="js/genderParallel.js"></script>
+    <script src="js/genderParallelUpdate.js"></script>
+    <script src="js/yearlyParallel.js"></script>
+    <script src="js/yearlyParallelUpdate.js"></script>
+    <script src="js/yearlyDraw.js"></script>
+    <script src="js/ageDraw.js"></script>
+    <script src="js/genderDraw.js"></script>
+    <script src="js/orderArray.js"></script>
+    <script src="js/labelMonth.js"></script>
+    <script src="js/numberAnswers.js"></script>
+    <script src="js/spiderChart.js"></script>
+    <script src="js/squareChartUpdate.js"></script>
+    <script src="js/selectCouStart.js"></script>
+    <script src="js/drawBubble.js"></script>
+    <!--<script src="js/numberAnswersStart.js"></script>
+    <script src="js/d3.layout.cloud.js"></script>
+    <script src="js/streamline.js"></script>
+    <script src="js/streamlineUpdate.js"></script>
+    <script src="js/wordle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-geo-projection/0.2.15/d3.geo.projection.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.12/crossfilter.min.js"></script>
+    <script type="text/javascript" src="//d3js.org/d3.v4.0.0-alpha.29.min.js"></script>-->
+
+
+    <script type="text/javascript">
+
+    /** SET UP SQUARE SVG **/
+      var mobileScreen = ($( window ).innerWidth() < 500 ? true : false);
+      var widthSquare = document.getElementById('distriUser').offsetWidth;
+      var heightSquare = (mobileScreen ? 280 : 360 )-25;
+      var heightSquareLegend = 25;
+
+      var svg = d3.select("#distriUser").append("svg")
+          .attr("width", widthSquare)
+          .attr("height", heightSquare);
+      var Legend = d3.select("#distriUserLegend").append("svg")
+          .attr("width", widthSquare)
+          .attr("height", heightSquareLegend);
+
+      /////////////////////////////////////////////////////////
+      /////////////////// Draw legend Function /////////////////////
+      /////////////////////////////////////////////////////////
+
+
+      Legend.append("rect")
+        .attr("x",widthSquare/2 -60 )
+        .attr("y",heightSquareLegend/4)
+        .attr("height",20)
+        .attr("width",20)
+        .attr("fill","#78869f")
+        .attr("opacity",0.5);
+
+     Legend.append("text")
+        .attr("x",widthSquare/2 - 30 )
+        .attr("y",heightSquareLegend/4+15)
+        .text("Total");
+
+      Legend.append("rect")
+        .attr("x",widthSquare/2 +30 )
+        .attr("y",heightSquareLegend/4)
+        .attr("height",20)
+        .attr("width",20)
+        .attr("fill","#ED8074")
+        .attr("opacity",0.5);
+      Legend.append("text")
+        .attr("id","couToUpdate")
+        .attr("x",widthSquare/2 +60)
+        .attr("y",heightSquareLegend/4+15)
+        .text("Selection");
+
+
+      /////////////////////////////////////////////////////////
+      /////////////////// Draw TOTAL squares /////////////////////
+      /////////////////////////////////////////////////////////
+
+    for(i=0;i<widthSquare;i=i+5){
+      for(j=0;j<heightSquare;j=j+5){
+        svg.append("rect")
+        .attr("x",i)
+        .attr("y",j)
+        .attr("width",5)
+        .attr("height",5)
+        .attr("fill","#78869f")
+        .attr("opacity",0.5)
+        .attr("stroke-width",1)
+        .attr("stroke", "#FFF");
+      }
+    }
+
+    var format = d3.format(",.0f");
+
+    /** SET UP SVG - ATTACH TO ELEMENT **/
+ 
+      var m = [20, 50, 30, 50];
+      var widthPie =  document.getElementById('donutGenderDistri').offsetWidth;
+          height = 400,
+          radius = Math.min(widthPie, height - m[0] - m[2]) / 2;
+
+
+
+    /** SET UP PIE CHART **/
+      var color = d3.scale.ordinal()
+          .range(["#ED8074","#4CEBE8"]);
+
+      var arc = d3.svg.arc()
+          .outerRadius(radius - 10)
+          .innerRadius(radius - 90);
+
+      var pie = d3.layout.pie()
+          .sort(null)
+          .value(function(d) { return d.population; });
+
+
+      var donutGenderDist = d3.select("#donutGenderDistri").append("svg")
+          .attr("width", widthPie)
+          .attr("height", height)
+        .append("g")
+          .attr("transform", "translate(" + widthPie / 2 + "," + height / 2 + ")");
+
+
+    donutGenderDist.append("svg:image")
+        .attr("xlink:href", "img/gender.svg")
+        .attr("width", widthPie/5)
+        .attr("height", widthPie/5)
+        .attr("x", -widthPie/2)
+        .attr("y",height/2-2*widthPie/5)
+        .attr("opacity",0.5);
+
+    /** SET UP BAR CHART **/
+    var widthBar = document.getElementById('barAgeDistri').offsetWidth - m[1] - m[3];
+
+
+    var x = d3.scale.linear().range([0, widthBar]),
+        y = d3.scale.ordinal().rangeRoundBands([0, height - m[0] - m[2]], .1);
+
+    var xAxis = d3.svg.axis().scale(x).orient("top").tickSize(-height),
+        yAxis = d3.svg.axis().scale(y).orient("left").tickSize(0);
+
+    var barAgeDistri = d3.select("#barAgeDistri").append("svg")
+        .attr("width", widthBar + m[1] + m[3])
+        .attr("height", height)
+      .append("g")
+        .attr("transform", "translate(" + m[3] + "," + m[0] + ")");
+
+    barAgeDistri.append("svg:image")
+        .attr("xlink:href", "img/age.svg")
+        .attr("width", widthBar/3)
+        .attr("height", widthBar/3)
+        .attr("x", 3*widthBar/5)
+        .attr("y",height-widthBar/3)
+        .attr("opacity",0.5);
+
+
+    /** SET UP PARALLEL CHART **/
+
+    var margin = {top: 30, right: 40, bottom: 20, left: 50};
+
+    var widthParallel =  document.getElementById('parallelYear').offsetWidth - margin.left - margin.right;
+
+    var widthParallelGender =  document.getElementById('parallelGender').offsetWidth - margin.left - margin.right;
+      //height = 500 - margin.top - margin.bottom;
+
+      var dimensions = [
+        {
+          name: "2011",
+          scale: d3.scale.linear().range([0.85*height, 0]),
+          type: "number"
+        },
+        {
+          name: "2012",
+          scale: d3.scale.linear().range([0.85*height, 0]),
+          type: "number"
+        },
+        {
+          name: "2013",
+          scale: d3.scale.linear().range([0.85*height, 0]),
+          type: "number"
+        },
+        {
+          name: "2014",
+          scale: d3.scale.linear().range([0.85*height, 0]),
+          type: "number"
+        },
+        {
+          name: "2015",
+          scale: d3.scale.linear().range([0.85*height, 0]),
+          type: "number"
+        },
+        {
+          name: "2016",
+          scale: d3.scale.linear().range([0.85*height, 0]),
+          type: "number"
+        }
+      ];
+
+
+      var colorParallel=d3.scale.ordinal()
+        .domain(["Housing","Jobs","Income","Community","Education","Environment","CivicEngagement","Health","LifeSatisfaction","Safety","WorkLifeBalance"])
+        .range(["#3DA594","#237FBD","#2CA3E0","#CE485D","#7EA943","#30A457","#DCA922","#7C3A73","#E26237","#606060","#962828"]);
+
+      var xPar = d3.scale.ordinal()
+          .domain(dimensions.map(function(d) { return d.name; }))
+          .rangePoints([0, widthParallel]);
+
+      var line = d3.svg.line()
+          .defined(function(d) { return !isNaN(d[1]); });
+
+      var yAxisPar = d3.svg.axis()
+          .orient("left");
+
+      var parallelYearChart = d3.select("#parallelYear").append("svg")
+          .attr("width", widthParallel + margin.left + margin.right)
+          .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+          .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+      var dimension = parallelYearChart.selectAll(".dimension")
+          .data(dimensions)
+        .enter().append("g")
+          .attr("class", "dimension")
+          .attr("transform", function(d) { return "translate(" + xPar(d.name) + ")"; });
+
+      var paraLineNameYear = parallelYearChart.append("text")
+         .attr("id", "paraLineNameYear")
+            .attr("x", 0.1*widthParallel)
+            .attr("y", height- 10)
+            .attr("font-size","20px");
+
+    //Radius of the outermost circle
+      var parallelFormat = d3.format('%');
+
+    /** SET UP AGE PARALLEL CHART **/
+
+      var dimensionsAge = [
+        {
+          name: "<15",
+          scale: d3.scale.linear().range([0.85*height, 0]),
+          type: "number"
+        },
+        {
+          name: "15-24",
+          scale: d3.scale.linear().range([0.85*height, 0]),
+          type: "number"
+        },
+        {
+          name: "25-34",
+          scale: d3.scale.linear().range([0.85*height, 0]),
+          type: "number"
+        },
+        {
+          name: "35-44",
+          scale: d3.scale.linear().range([0.85*height, 0]),
+          type: "number"
+        },
+        {
+          name: "45-54",
+          scale: d3.scale.linear().range([0.85*height, 0]),
+          type: "number"
+        },
+        {
+          name: "55-64",
+          scale: d3.scale.linear().range([0.85*height, 0]),
+          type: "number"
+        },
+        {
+          name: ">65",
+          scale: d3.scale.linear().range([0.85*height, 0]),
+          type: "number"
+        },
+      ];
+
+      var xParAge = d3.scale.ordinal()
+          .domain(dimensionsAge.map(function(d) { return d.name; }))
+          .rangePoints([0, widthParallel]);
+
+      var parallelAgeChart = d3.select("#parallelAge").append("svg")
+          .attr("width", widthParallel + margin.left + margin.right)
+          .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+          .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+      var dimensionAge = parallelAgeChart.selectAll(".dimension")
+          .data(dimensionsAge)
+        .enter().append("g")
+          .attr("class", "dimension")
+          .attr("transform", function(d) { return "translate(" + xParAge(d.name) + ")"; });
+
+      var paraLineNameAge = parallelAgeChart.append("text")
+         .attr("id", "paraLineNameAge")
+            .attr("x", 0.1*widthParallel)
+            .attr("y", height- 10)
+            .attr("font-size","20px");
+
+
+
+    /** SET UP Gender PARALLEL CHART **/
+
+
+    var widthParallelGender =  document.getElementById('parallelGender').offsetWidth - margin.left - margin.right;
+
+
+      var dimensionsGender = [
+          {
+            name: "f",
+            scale: d3.scale.linear().range([0.85*height, 0]),
+            type: "number"
+          },
+          {
+            name: "m",
+            scale: d3.scale.linear().range([0.85*height, 0]),
+            type: "number"
+          }
+        ];
+
+      var xParGender = d3.scale.ordinal()
+          .domain(dimensionsGender.map(function(d) { return d.name; }))
+          .rangePoints([0, widthParallelGender]);
+
+      var parallelGenderChart = d3.select("#parallelGender").append("svg")
+          .attr("width", widthParallelGender + margin.left + margin.right)
+          .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+          .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+      var dimensionGender = parallelGenderChart.selectAll(".dimension")
+          .data(dimensionsGender)
+        .enter().append("g")
+          .attr("class", "dimension")
+          .attr("transform", function(d) { return "translate(" + xParGender(d.name) + ")"; });
+
+      var paraLineNameGender = parallelGenderChart.append("text")
+         .attr("id", "paraLineNameGender")
+            .attr("x", 0.1*widthParallelGender)
+            .attr("y", height- 10)
+            .attr("font-size","20px");
+    
+
+    /** SET UP WORDLE CHART 
+
+      var widthWordle = document.getElementById('wordle').offsetWidth;
+      var heightWordle = 500;
+
+      var wordleLayer = d3.select("#wordle").append("svg")
+          .attr("width", widthWordle)
+          .attr("height", heightWordle);**/
+
+    /** CALL FIRST GRAPHIC IMPLEMENTATION **/
+    drawBubble();
+    donutGender();
+    barAge();
+    parallelYear();
+    parallelAge();
+    parallelGender();
+    spiderChart("Total");
+    //wordleChart("Total");
+
+
+    /** LOAD DATA **/
+    queue()
+      .defer(d3.csv, "data/ageDistriTot.csv")
+      .defer(d3.csv, "data/ageParallelTot.csv")
+      .defer(d3.csv, "data/codeIso.csv")
+      .defer(d3.csv, "data/distriTot.csv")
+      .defer(d3.csv, "data/genderDistriTot.csv")
+      .defer(d3.csv, "data/genderParallelTot.csv")
+      .defer(d3.csv, "data/yearParallelTot.csv")
+      .await(startAppli)
+
+
+var ageDistriTotMemory;var ageParallelTotMemory;var codeIsoMemory;var dataAgeMemory; var dataCountryTotMemory;var distriTotMemory;var genderDistriTotMemory;var genderParallelTotMemory; var yearParallelTotMemory; 
+
+
+
+
+      
+    </script>  
+  </body>
+</html>  
