@@ -3,7 +3,7 @@
 
     function parallelGender(){
 
-      d3.csv("data/GenderParallelTot.csv", function(error,data) {
+      d3.csv("data/genderParallelTot.csv", function(error,data) {
 
         if (error) throw error;
         data=data.filter(function(d) {
