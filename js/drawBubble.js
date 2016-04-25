@@ -46,7 +46,7 @@ d3.csv("data/distriTot.csv", type, function(error, dataTemp) {
 function createDataSet(dataTemp){
   var test=[];
   var temp;
-  d3.csv("data/codeISO.csv", function(error, countryCode) {
+  d3.csv("data/codeIso.csv", function(error, countryCode) {
         dataTemp.forEach(function(d) {
           countryCode.forEach(function(k) {
             if(d.country == k.ISO ){
