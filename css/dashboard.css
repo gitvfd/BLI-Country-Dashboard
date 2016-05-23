@@ -10,8 +10,11 @@
 
 
   body {
-    background:#fff; font: 16px TheSerif;font-weight: 300; color:#303030; margin:0% 5% 0% 5%; padding: .0em 0.0em 12em 0.0em;cursor: default;
+    background-image:-webkit-linear-gradient(top, #d2dfec,#E4E2D4);background-image:linear-gradient(to bottom, #d2dfec,#E4E2D4);
+    font: 16px TheSerif;font-weight: 300; color:#303030; margin:0% 5% 0% 5%; padding: .0em 0.0em 12em 0.0em;cursor: default;
   }
+  
+
   br {
       display: block;
       clear:both;
@@ -31,7 +34,7 @@
       border:none;
   }
   .dotted {
-    border-bottom: 40px solid #78869f;
+    border-bottom: 40px solid transparent;
     opacity:0.05;
 ; 
     /**border-style: none none dotted; **/
@@ -52,7 +55,7 @@
 
 
   #title{
-    background: #fff;
+    /**background: #fff;**/
     color:#464646;
     font: 36px TheSerif;
     /**text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
@@ -67,7 +70,7 @@
   }
 
   div#intro{
-    background: #FFFFFF;;
+    /**background: #FFFFFF;;**/
     padding:25px 10px 10px 10px;
   }
 
@@ -96,8 +99,8 @@ p#intro{
   width:20%;
   margin-right: 2%;
 
-  margin-top: 4%;
-  margin-bottom: 3%;
+  margin-top: 2%;
+  margin-bottom: 2%;
 
 }
 #selectedCou{
@@ -220,7 +223,7 @@ p#intro{
  
 
   #distriUserLegend{
-    background: #FFFFFF;;
+    background: transparent;
     margin:0.25% 0.25% 0.25% 0.25%;
     float:left;
     width:38.5%;
@@ -229,7 +232,7 @@ p#intro{
   }
 
   #distriUser{
-    background: #FFFFFF;;
+    background: transparent;
     margin:0.25% 0.25% 0.25% 0.25%;
     float:left;
     width:38.5%;
@@ -255,7 +258,7 @@ p#intro{
 
 
   #donutGenderDistri{    
-    background: #FFFFFF;;
+    background: transparent;
     float:left;
     /**text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;**/
     margin:0.25% 0.25% 0.25% 0.25%;
@@ -264,7 +267,7 @@ p#intro{
   }
 
   #barAgeDistri{
-    background: #FFFFFF;;
+    background: transparent;
     float:left;
     /**text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;**/
     margin:0.25% 0.25% 0.25% 0.25%;
@@ -273,7 +276,7 @@ p#intro{
   }
 
   #spiderPref{
-    background: #FFFFFF;;
+    background: transparent;
     margin:0.25% 0.25% 0.25% 0.25%;
     float:left;
     width:75.5%;
@@ -282,21 +285,21 @@ p#intro{
   }
   
   #parallelYear, #parallelAge {
-    background: #FFFFFF;;
+    background: transparent;
     /**text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;**/
     margin:0.25% 0.25% 0.25% 0.25%;
     float:left;
     width: 75.5%;
   }
  #parallelGender {
-    background: #FFFFFF;;
+    background: transparent;
     /**text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;**/
     margin:0.25% 0.25% 0.25% 0.25%;
     float:left;
     width: 38.5%;
   }
   #wordle {
-    background: #FFFFFF;;
+    background: transparent;
     /**text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;**/
     margin:0.25% 0.25% 0.25% 0.25%;
     float:left;
@@ -399,7 +402,7 @@ p#intro{
 
 @media all and (max-width: 650px) {
   body {
-    background:#fff; font: 11px TheSerif;font-weight: 300; color:#303030; margin:0% 5% 0% 5%; padding: .0em 0.0em 12em 0.0em;cursor: default;
+    background-image:-webkit-linear-gradient(top, #d2dfec,#E4E2D4);background-image:linear-gradient(to bottom, #d2dfec,#E4E2D4); font: 11px TheSerif;font-weight: 300; color:#303030; margin:0% 5% 0% 5%; padding: .0em 0.0em 12em 0.0em;cursor: default;
   }
  #selectedCou{
   margin-left:0.5%;
@@ -451,3 +454,4 @@ p#intro{
    height:3000px;
   }
 }
+
