@@ -145,16 +145,17 @@ p#intro{
   .subtitle {
     float:left;
     display: inline;
-    font: 16px TheSerif;
+    font: 18px TheSerif;
     line-height: 35px;
     padding-left:10px;
     font-style: normal;
     color: #7A7A7A;
-    margin: 0px 0px 0px 0px; /** top right bottom left**/
+    margin: 1px 0px 0px 0px; /** top right bottom left**/
   }
 
   .explanation{
     clear:both;
+    font: 20px TheSerif;
   }
 
 .keyFact{
@@ -416,6 +417,21 @@ p#intro{
   width:40%;
   margin-right: 2%;
 }
+
+
+h2#intro {
+    font: 20px Caecilia LT Std;
+    line-height: 1.43;
+
+}
+.subtitle {
+    line-height: 23px;
+    margin-top:7px;
+  }
+  .explanation{
+    font: 18px TheSerif;
+  }
+
   .keyFact, .keyFactGender{
 
     width:98.5%;
@@ -453,5 +469,7 @@ p#intro{
   #embedBLI{   
    height:3000px;
   }
+
+
 }
 
