@@ -14,7 +14,7 @@ var format = d3.format(",d");
 
 var pack = d3.layout.pack()
     .sort(null)
-    .size([width - 2, height - 2])
+    .size([width , height ])
     .value(function(d){ return d.population * d.population; })
     .padding(3);
 
@@ -35,7 +35,7 @@ var popTot = bubbleFrame.append("text")
 
 d3.csv("data/distriTot.csv", type, function(error, dataTemp) {
   if (error) throw error;
-  data2=dataTemp.filter(function(d){ return d.population > 1000; })
+  data2=dataTemp.filter(function(d){ return d.population > 1000 || d.country=="CHL"; })
 
   data=data2.filter(function(d){ return d.country != "Total"; })
 
