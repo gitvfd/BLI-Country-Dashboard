@@ -62,7 +62,19 @@
           }
 
           d3.selectAll("#paraLineNameGender")
-            .text(d.variable);
+            .text(function(){
+              if(d.variable=="Housing"){return"Housing";}
+              if(d.variable=="Income"){return"Income";}
+              if(d.variable=="Jobs"){return"Jobs";}
+              if(d.variable=="Community"){return"Community";}
+              if(d.variable=="Education"){return"Education";}
+              if(d.variable=="Environment"){return"Environment";}
+              if(d.variable=="CivicEngagement"){return"Civic Engagement";}
+              if(d.variable=="Health"){return"Health";}
+              if(d.variable=="LifeSatisfaction"){return"Life Satisfaction";}
+              if(d.variable=="Safety"){return"Safety";}
+              if(d.variable=="WorkLifeBalance"){return"WorkLifeBalance";}
+            });
 
           parallelGenderChart.append("png:image")
             .attr("id","topicIconGender")
@@ -79,10 +91,10 @@
               if(d.variable=="Safety"){return"img/Safety.png";}
               if(d.variable=="WorkLifeBalance"){return"img/WorkLifeBalance.png";}
             })
-            .attr("width", 20)
-            .attr("height", 20)
+            .attr("width", 30)
+            .attr("height", 30)
             .attr("x", 0.025*widthParallelGender)
-            .attr("y",height-27);
+            .attr("y",height-29);
         }
 
         function mouseout(d) {
