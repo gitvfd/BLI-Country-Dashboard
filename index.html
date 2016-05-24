@@ -245,32 +245,32 @@
       var dimensions = [
         {
           name: "2011",
-          scale: d3.scale.linear().range([0.85*height, 0]),
+          scale: d3.scale.linear().range([0.85*height, 5]),
           type: "number"
         },
         {
           name: "2012",
-          scale: d3.scale.linear().range([0.85*height, 0]),
+          scale: d3.scale.linear().range([0.85*height, 5]),
           type: "number"
         },
         {
           name: "2013",
-          scale: d3.scale.linear().range([0.85*height, 0]),
+          scale: d3.scale.linear().range([0.85*height, 5]),
           type: "number"
         },
         {
           name: "2014",
-          scale: d3.scale.linear().range([0.85*height, 0]),
+          scale: d3.scale.linear().range([0.85*height, 5]),
           type: "number"
         },
         {
           name: "2015",
-          scale: d3.scale.linear().range([0.85*height, 0]),
+          scale: d3.scale.linear().range([0.85*height, 5]),
           type: "number"
         },
         {
           name: "2016",
-          scale: d3.scale.linear().range([0.85*height, 0]),
+          scale: d3.scale.linear().range([0.85*height, 5]),
           type: "number"
         }
       ];
@@ -316,37 +316,37 @@
       var dimensionsAge = [
         {
           name: "<15",
-          scale: d3.scale.linear().range([0.85*height, 0]),
+          scale: d3.scale.linear().range([0.85*height, 5]),
           type: "number"
         },
         {
           name: "15-24",
-          scale: d3.scale.linear().range([0.85*height, 0]),
+          scale: d3.scale.linear().range([0.85*height, 5]),
           type: "number"
         },
         {
           name: "25-34",
-          scale: d3.scale.linear().range([0.85*height, 0]),
+          scale: d3.scale.linear().range([0.85*height, 5]),
           type: "number"
         },
         {
           name: "35-44",
-          scale: d3.scale.linear().range([0.85*height, 0]),
+          scale: d3.scale.linear().range([0.85*height, 5]),
           type: "number"
         },
         {
           name: "45-54",
-          scale: d3.scale.linear().range([0.85*height, 0]),
+          scale: d3.scale.linear().range([0.85*height, 5]),
           type: "number"
         },
         {
           name: "55-64",
-          scale: d3.scale.linear().range([0.85*height, 0]),
+          scale: d3.scale.linear().range([0.85*height, 5]),
           type: "number"
         },
         {
           name: ">65",
-          scale: d3.scale.linear().range([0.85*height, 0]),
+          scale: d3.scale.linear().range([0.85*height, 5]),
           type: "number"
         },
       ];
@@ -383,13 +383,13 @@
 
       var dimensionsGender = [
           {
-            name: "f",
-            scale: d3.scale.linear().range([0.85*height, 0]),
+            name: "Women",
+            scale: d3.scale.linear().range([0.85*height, 5]),
             type: "number"
           },
           {
-            name: "m",
-            scale: d3.scale.linear().range([0.85*height, 0]),
+            name: "Men",
+            scale: d3.scale.linear().range([0.85*height, 5]),
             type: "number"
           }
         ];
@@ -446,6 +446,7 @@
       .defer(d3.csv, "data/genderDistriTot.csv")
       .defer(d3.csv, "data/genderParallelTot.csv")
       .defer(d3.csv, "data/yearParallelTot.csv")
+      .defer(d3.csv, "data/yearParallelCountCou.csv")
       .await(startAppli)
 
 

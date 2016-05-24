@@ -18,8 +18,6 @@ function selectCouStart(){
 	//var couName="Italy";
 
 	updateData(ISO,couName)
-console.log(couName)
-console.log(ISO)
 
     setTimeout(function(){
 		d3.select("#bubble")
