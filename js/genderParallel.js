@@ -73,7 +73,7 @@
               if(d.variable=="Health"){return"Health";}
               if(d.variable=="LifeSatisfaction"){return"Life Satisfaction";}
               if(d.variable=="Safety"){return"Safety";}
-              if(d.variable=="WorkLifeBalance"){return"WorkLifeBalance";}
+              if(d.variable=="WorkLifeBalance"){return"Work-Life Balance";}
             });
 
           parallelGenderChart.append("png:image")

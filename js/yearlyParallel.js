@@ -36,8 +36,22 @@
           .append("text")
             .attr("class", "title")
             .attr("text-anchor", "middle")
-            .attr("y", -9)
+            .attr("y", -18)
             .text(function(d) { return d.name; });
+
+        i=0;
+        
+        dimension.append("g")
+            .attr("class", "axis parallel")
+            .each(function(d) { d3.select(this).call(yAxisPar.scale(d.scale)); })
+          .append("text")
+            .attr("class", function(){ 
+              i++; 
+              return"nbrUsers" +i ;
+            })
+            .attr("text-anchor", "middle")
+            .attr("y",-1)
+            .text();            
 
         var ordinal_labels = parallelYearChart.selectAll(".axis text")
             .on("mouseover", mouseover)
@@ -73,7 +87,7 @@
               if(d.variable=="Health"){return"Health";}
               if(d.variable=="LifeSatisfaction"){return"Life Satisfaction";}
               if(d.variable=="Safety"){return"Safety";}
-              if(d.variable=="WorkLifeBalance"){return"WorkLifeBalance";}
+              if(d.variable=="WorkLifeBalance"){return"Work-Life Balance";}
             });
 
           parallelYearChart.append("png:image")

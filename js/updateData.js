@@ -11,7 +11,8 @@
 
 
         var dataYear =yearParallelTotMemory.filter(function(d){return d.country==codeISO});
-        updateParallelYear(dataYear);
+        var YearCount=yearParallelCountCouMemory.filter(function(d){return d.country==codeISO});
+        updateParallelYear(dataYear,YearCount);
 
 
         var dataAgePar =ageParallelTotMemory.filter(function(d){return d.country==codeISO});
