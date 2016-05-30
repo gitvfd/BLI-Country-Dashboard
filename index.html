@@ -19,10 +19,10 @@
   <body>
     <nav class="nav-meta">
     <ul class="nav-meta__language"><!-- https://github.com/Irrelon/jquery-lang-js/blob/master/index.html-->
-      <li><a  href="#" onclick="window.lang.change('en') ; label2update(); return false; ">English</a></li>
-      <li><a  href="#" onclick="window.lang.change('es') ; label2update(); return false;">Español</a></li>
-      <li><a  href="#" onclick="window.lang.change('fr') ; label2update(); return false;">Français</a></li>
-      <li><a  href="#" onclick="window.lang.change('de') ; label2update(); return false;">Deutsch</a></li>
+      <li><a  href="#" onclick="window.lang.change('en') ; label2update('en'); return false; ">English</a></li>
+      <li><a  href="#" onclick="window.lang.change('es') ; label2update('es'); return false;">Español</a></li>
+      <li><a  href="#" onclick="window.lang.change('fr') ; label2update('fr'); return false;">Français</a></li>
+      <li><a  href="#" onclick="window.lang.change('de') ; label2update('de'); return false;">Deutsch</a></li>
     </ul>
   </nav>
   <br>
@@ -35,8 +35,7 @@
     <hr class="dotted">
     <h1 class="title" lang="en">Pick a country</h1>
     <h2 class="subtitle" lang="en">The bubble size reflects the number of responses from that country</h2>
-    <p class="explanation" lang="en">Clicking on a country will update all the charts. They will provide you with interesting insights on some of the people living in this country and their well-being preferences.<br/>
-    The red squares indicate the proportion of answers from the selected country in comparison to the total number of responses to the Better Life Index</p>
+    <p class="explanation" lang="en">Clicking on a country will update all the charts. They will provide you with interesting insights on some of the people living in this country and their well-being preferences. The red squares indicate the proportion of answers from the selected country in comparison to the total number of responses to the Better Life Index</p>
 
     <div class="bubbleDiv" id="bubble"></div>
     
@@ -459,6 +458,7 @@
           .attr("height", heightWordle);**/
 
     /** CALL FIRST GRAPHIC IMPLEMENTATION **/
+    
     drawBubble();
     donutGender();
     barAge();

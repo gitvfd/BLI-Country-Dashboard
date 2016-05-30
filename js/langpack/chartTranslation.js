@@ -1,4 +1,5 @@
-function label2update(){
+function label2update(lang){
+  document.cookie = 'langCookie=' + lang;
 	setTimeout(function(){
 		name=langCountryName(getCookie("ISO"));
 
@@ -155,7 +156,7 @@ function langTopicName(topic){
 
 function langCountryName(ISOcode){
 	var translatedCountryName;
-
+  
 	if(getCookie("langCookie")=="en"){
 		codeIsoMemory.forEach(function(d) {
     		if(d.ISO == ISOcode ){
