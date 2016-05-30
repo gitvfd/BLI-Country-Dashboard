@@ -7,7 +7,7 @@
 "responses":"réponses",
 "Pick a country":"Sélectionnez un pays",
 "The bubble size reflects the number of responses from that country":"La taille des bulles indiquent le nombre de réponses reçus pour un pays donné",
-"Clicking on a country will update all the charts. They will provide you with interesting insights on some of the people living in this country and their well-being preferences.":"Cliquer sur un pays met à jour toutes les informations sur ce site. Vous découvrirez des informations passionantes sur les personnes qui vivent dans les pays et ce qui leur importe pour vivre mieux.",
+"Clicking on a country will update all the charts. They will provide you with interesting insights on some of the people living in this country and their well-being preferences. The red squares indicate the proportion of answers from the selected country in comparison to the total number of responses to the Better Life Index":"Cliquer sur un pays met à jour toutes les informations sur ce site. Vous découvrirez des informations passionantes sur les personnes qui vivent dans les pays et ce qui leur importe pour vivre mieux. ",
 "The red squares indicate the proportion of answers from the selected country in comparison to the total number of responses to the Better Life Index":"Les carrés rouges représentent la proportion de réponses de la part du pays sélectionné par rapport au nombre total de réponses au  \"Better Life Index\".",
 "Gender and Age distribution":"Âge et genre",
 "Number":"En nombre",
