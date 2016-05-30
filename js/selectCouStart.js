@@ -68,7 +68,7 @@ function selectCouStart(){
 
 	if(lang=="en"||lang=="fr"||lang=="de"||lang=="es"){
 	    setTimeout(function(){
-	    	window.lang.change(lang) ; label2update(); 
+	    	window.lang.change(lang) ; label2update(lang); 
 	    },1000)
 	}
 }
