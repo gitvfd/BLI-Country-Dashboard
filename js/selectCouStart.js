@@ -9,7 +9,7 @@ function selectCouStart(){
 	//var lang=URL_lang.substring(5,2);
 
 	var couName;
-	
+	var ISO;
 	codeIsoMemory.forEach(function(d) {
     		if(d.ISO == URL ){
       			couName= d.country;
@@ -19,11 +19,17 @@ function selectCouStart(){
     		}   
 	})
 
-
 	if(couName==undefined){
 			var ISO="ITA";
 			var couName="Italy";
         	document.cookie = 'ISO=' + "ITA";
+	}
+
+	if (lang=="en"||lang=="fr"||lang=="de"||lang=="es"){
+        	document.cookie = 'langCookie=' + lang;
+	}
+	else{
+		document.cookie = 'langCookie=' + "en";
 	}
 	
 	//To create dedicated URL for country add /?ISO at the end of the URL extract the last 3 characters that give ISO and then find corresponding name
@@ -36,7 +42,7 @@ function selectCouStart(){
 		d3.select("#bubble")
 		.selectAll("circle")
 	     .style("fill","#78869f");
-		
+
 		d3.select("#bubble")
 			d3.selectAll(".circle."+couName.split(' ').join('.'))
 	        .style("fill","#ED8074")
@@ -44,7 +50,7 @@ function selectCouStart(){
 
 	        d3.selectAll("#selectedCou")
 	        .text(langCountryName(ISO));
-	        
+
 	        d3.selectAll("#numberAnswerSelection")
 	        .text(function(){
 	        	var temp
@@ -62,8 +68,7 @@ function selectCouStart(){
 
 	if(lang=="en"||lang=="fr"||lang=="de"||lang=="es"){
 	    setTimeout(function(){
-	    	window.lang.change(lang) ; 
-	    	label2update(); 
-	    },1500)
+	    	window.lang.change(lang) ; label2update(); 
+	    },1000)
 	}
 }
