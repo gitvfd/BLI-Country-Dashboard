@@ -58,11 +58,12 @@ function selectCouStart(){
 
 	        d3.selectAll("#couToUpdate")
 	        .text(couName);
-        },1000)
+        },500)
 
 	if(lang=="en"||lang=="fr"||lang=="de"||lang=="es"){
 	    setTimeout(function(){
-	    	window.lang.change(lang) ; label2update(); 
+	    	window.lang.change(lang) ; 
+	    	label2update(); 
 	    },1500)
 	}
 }
