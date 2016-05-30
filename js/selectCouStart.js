@@ -8,8 +8,6 @@ function selectCouStart(){
 	var URL=URL_lang.substring(0, 3);
 	//var lang=URL_lang.substring(5,2);
 
-	console.log(URL);
-	console.log(lang);
 	var couName;
 	
 	codeIsoMemory.forEach(function(d) {
@@ -60,8 +58,9 @@ function selectCouStart(){
 	        .text(couName);
         },500)
 
-    setTimeout(function(){
-    	window.lang.change(lang) ; label2update(); 
-    },1000)
-
+	if(lang=="en"||lang=="fr"||lang=="de"||lang=="es"){
+	    setTimeout(function(){
+	    	window.lang.change(lang) ; label2update(); 
+	    },1000)
+	}
 }
