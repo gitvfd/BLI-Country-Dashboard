@@ -49,9 +49,10 @@
           .attr("fill","#4CEBE8")
           .attr("opacity",0.5);
        donutGenderDist.append("text")
+          .attr("id","donutMen")
           .attr("x",35 - widthPie/2 )
           .attr("y",35-height/2)
-          .text("Men");
+          .text(langGender("Men"));
 
         donutGenderDist.append("rect")
           .attr("x",10 - widthPie/2  )
@@ -61,9 +62,10 @@
           .attr("fill","#ED8074")
           .attr("opacity",0.5);
         donutGenderDist.append("text")
+          .attr("id","donutWomen")
           .attr("x",35 - widthPie/2 )
           .attr("y",65-height/2)
-          .text("Women");
+          .text(langGender("Women"));
 
 
          donutGenderDist.selectAll("path")

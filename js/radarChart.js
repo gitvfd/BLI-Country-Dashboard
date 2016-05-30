@@ -6,7 +6,7 @@
 /////////// Inspired by the code of alangrafu ///////////
 /////////////////////////////////////////////////////////
 	
-function RadarChart(id, data, options,couName) {
+function RadarChart(id, data, options,couName,ISO) {
 	var cfg = {
 	 w: 600,				//Width of the circle
 	 h: 600,				//Height of the circle
@@ -131,7 +131,7 @@ function RadarChart(id, data, options,couName) {
 		.attr("dy", "0.35em")
 		.attr("x", function(d, i){ return rScale(maxValue * cfg.labelFactor) * Math.cos(angleSlice*i - Math.PI/2); })
 		.attr("y", function(d, i){ return rScale(maxValue * cfg.labelFactor) * Math.sin(angleSlice*i - Math.PI/2); })
-		.text(function(d){return d})
+		.text(function(d){return langTopicName(d)})
 		.call(wrap, cfg.wrapWidth);
 
 	/////////////////////////////////////////////////////////
@@ -268,7 +268,7 @@ function RadarChart(id, data, options,couName) {
 	g.append("text")
 		.attr("x",70)
 		.attr("y",1.50*rScale(maxValue))
-		.text(couName);
+		.text(langCountryName(ISO));
 
 	/////////////////////////////////////////////////////////
 	/////////////////// Helper Function /////////////////////

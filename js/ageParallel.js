@@ -62,19 +62,7 @@
           }
 
           d3.selectAll("#paraLineNameAge")
-            .text(function(){
-              if(d.variable=="Housing"){return"Housing";}
-              if(d.variable=="Income"){return"Income";}
-              if(d.variable=="Jobs"){return"Jobs";}
-              if(d.variable=="Community"){return"Community";}
-              if(d.variable=="Education"){return"Education";}
-              if(d.variable=="Environment"){return"Environment";}
-              if(d.variable=="CivicEngagement"){return"Civic Engagement";}
-              if(d.variable=="Health"){return"Health";}
-              if(d.variable=="LifeSatisfaction"){return"Life Satisfaction";}
-              if(d.variable=="Safety"){return"Safety";}
-              if(d.variable=="WorkLifeBalance"){return"Work-Life Balance";}
-            });
+            .text(langTopicName(d.variable));
 
           parallelAgeChart.append("png:image")
             .attr("id","topicIconAge")

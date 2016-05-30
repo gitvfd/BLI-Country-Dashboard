@@ -24,29 +24,29 @@
             ////////////////////////////////////////////////////////////// 
             var data = [
                   [//Total
-                  {axis:"Civic Engagement",value:spiderTot[6].value},
+                  {axis:"CivicEngagement",value:spiderTot[6].value},
                   {axis:"Community",value:spiderTot[3].value},
                   {axis:"Education",value:spiderTot[4].value},
                   {axis:"Environment",value:spiderTot[5].value},
                   {axis:"Health",value:spiderTot[7].value},
                   {axis:"Housing",value:spiderTot[0].value},
                   {axis:"Income",value:spiderTot[1].value},
-                  {axis:"Life Satisfaction",value:spiderTot[8].value},
+                  {axis:"LifeSatisfaction",value:spiderTot[8].value},
                   {axis:"Jobs",value:spiderTot[2].value}  ,
                   {axis:"Safety",value:spiderTot[9].value}  ,
-                  {axis:"Work-Life Balance",value:spiderTot[10].value}        
+                  {axis:"WorkLifeBalance",value:spiderTot[10].value}        
                   ],[//countryX
-                  {axis:"Civic Engagement",value:spiderCou[6].value},
+                  {axis:"CivicEngagement",value:spiderCou[6].value},
                   {axis:"Community",value:spiderCou[3].value},
                   {axis:"Education",value:spiderCou[4].value},
                   {axis:"Environment",value:spiderCou[5].value},
                   {axis:"Health",value:spiderCou[7].value},
                   {axis:"Housing",value:spiderCou[0].value},
                   {axis:"Income",value:spiderCou[1].value},
-                  {axis:"Life Satisfaction",value:spiderCou[8].value},
+                  {axis:"LifeSatisfaction",value:spiderCou[8].value},
                   {axis:"Jobs",value:spiderCou[2].value}  ,
                   {axis:"Safety",value:spiderCou[9].value}  ,
-                  {axis:"Work-Life Balance",value:spiderCou[10].value}        
+                  {axis:"WorkLifeBalance",value:spiderCou[10].value}        
                   ]
                 ];
             ////////////////////////////////////////////////////////////// 
@@ -67,6 +67,6 @@
             //Call function to draw the Radar chart
             ;
             //console.log(couName)
-            RadarChart(".radarChart", data, radarChartOptions,couName);       
+            RadarChart(".radarChart", data, radarChartOptions,couName,ISO);       
           });
       }

@@ -1,1 +1,221 @@
-country,ISOAfghanistan,AFGAland Islands,ALAAlbania,ALBAlgeria,DZAAmerican Samoa,ASMAndorra,ANDAngola,AGOAnguilla,AIAAntarctica,ATAAntigua and Barbuda,ATGArgentina,ARGArmenia,ARMAruba,ABWAustralia,AUSAustria,AUTAzerbaijan,AZEBahamas,BHSBahrain,BHRBangladesh,BGDBarbados,BRBBelarus,BLRBelgium,BELBelize,BLZBenin,BENBermuda,BMUBhutan,BTNBolivia,BOLBosnia and Herzegovina,BIHBotswana,BWABouvet Island,BVTBrazil,BRABritish Virgin Islands,VGBBritish Indian Ocean Territory,IOTBrunei Darussalam,BRNBulgaria,BGRBurkina Faso,BFABurundi,BDICambodia,KHMCameroon,CMRCanada,CANCape Verde,CPVCayman Islands,CYMCentral African Republic,CAFChad,TCDChile,CHLChina,CHNHong Kong (China),HKGMacao (China),MACChristmas Island,CXRCocos (Keeling) Islands,CCKColombia,COLComoros,COMCongo (Brazzaville),COGCongo (Democratic Republic of the),CODCook Islands,COKCosta Rica,CRICote d'Ivoire,CIVCroatia,HRVCuba,CUBCyprus,CYPCzech Republic,CZEDenmark,DNKDjibouti,DJIDominica,DMADominican Republic,DOMEcuador,ECUEgypt,EGYEl Salvador,SLVEquatorial Guinea,GNQEritrea,ERIEstonia,ESTEthiopia,ETHFalkland Islands (Malvinas),FLKFaroe Islands,FROFiji,FJIFinland,FINFrance,FRAFrench Guiana,GUFFrench Polynesia,PYFFrench Southern Territories,ATFGabon,GABGambia,GMBGeorgia,GEOGermany,DEUGhana,GHAGibraltar,GIBGreece,GRCGreenland,GRLGrenada,GRDGuadeloupe,GLPGuam,GUMGuatemala,GTMGuernsey,GGYGuinea,GINGuinea-Bissau,GNBGuyana,GUYHaiti,HTIHeard Island and Mcdonald Islands,HMDHoly See(Vatican City State),VATHonduras,HNDHungary,HUNIceland,ISLIndia,INDIndonesia,IDNIran (Islamic Republic of),IRNIraq,IRQIreland,IRLIsle of Man,IMNIsrael,ISRItaly,ITAJamaica,JAMJapan,JPNJersey,JEYJordan,JORKazakhstan,KAZKenya,KENKiribati,KIRKorea (Democratic People's Republic of),PRKKorea (Republic of),KORKuwait,KWTKyrgyzstan,KGZLao PDR,LAOLatvia,LVALebanon,LBNLesotho,LSOLiberia,LBRLibya,LBYLiechtenstein,LIELithuania,LTULuxembourg,LUXFormer Yugoslav Republic of Macedonia (FYROM),MKDMadagascar,MDGMalawi,MWIMalaysia,MYSMaldives,MDVMali,MLIMalta,MLTMarshall Islands,MHLMartinique,MTQMauritania,MRTMauritius,MUSMayotte,MYTMexico,MEXMicronesia (Federated States of),FSMMoldova,MDAMonaco,MCOMongolia,MNGMontenegro,MNEMontserrat,MSRMorocco,MARMozambique,MOZMyanmar,MMRNamibia,NAMNauru,NRUNepal,NPLNetherlands,NLDNetherlands Antilles,ANTNew Caledonia,NCLNew Zealand,NZLNicaragua,NICNiger,NERNigeria,NGANiue,NIUNorfolk Island,NFKNorthern Mariana Islands,MNPNorway,NOROman,OMNPakistan,PAKPalau,PLWPalestinian Territory, PSEPanama,PANPapua New Guinea,PNGParaguay,PRYPeru,PERPhilippines,PHLPitcairn,PCNPoland,POLPortugal,PRTPuerto Rico,PRIQatar,QATReunion,REURomania,ROURussian Federation,RUSRwanda,RWASaint-Barthelemy,BLMSaint Helena,SHNSaint Kitts and Nevis,KNASaint Lucia,LCASaint-Martin (French part),MAFSaint Pierre and Miquelon,SPMSaint Vincent and Grenadines,VCTSamoa,WSMSan Marino,SMRSao Tome and Principe,STPSaudi Arabia,SAUSenegal,SENSerbia,SRBSeychelles,SYCSierra Leone,SLESingapore,SGPSlovakia,SVKSlovenia,SVNSolomon Islands,SLBSomalia,SOMSouth Africa,ZAFSouth Georgia and the South Sandwich Islands,SGSSouth Sudan,SSDSpain,ESPSri Lanka,LKASudan,SDNSuriname,SURSvalbard and Jan Mayen Islands,SJMSwaziland,SWZSweden,SWESwitzerland,CHESyrian Arab Republic (Syria),SYRChinese Taipei,TWNTajikistan,TJKTanzania (United Republic of),TZAThailand,THATimor-Leste,TLSTogo,TGOTokelau,TKLTonga,TONTrinidad and Tobago,TTOTunisia,TUNTurkey,TURTurkmenistan,TKMTurks and Caicos Islands,TCATuvalu,TUVUganda,UGAUkraine,UKRUnited Arab Emirates,AREUnited Kingdom,GBRUnited States of America,USAUnited States Minor Outlying Islands,UMIUruguay,URYUzbekistan,UZBVanuatu,VUTVenezuela (Bolivarian Republic of),VENViet Nam,VNMVirgin Islands (US),VIRWallis and Futuna Islands,WLFWestern Sahara,ESHYemen,YEMZambia,ZMBZimbabwe,ZWE
+ISO,country,country_fr,country_es,country_ru,country_de,country_pt,country_it
+AFG,Afghanistan,Afghanistan,Afganistán,Афганистан,Afghanistan,Afeganistão,Afghanistan
+ALB,Albania,Albanie,Albania,Албания,Albanien,Albânia,Albania
+DZA,Algeria,Algérie,Argelia,Алжир,Algerien,Argélia,Algeria
+AND,Andorra,Andorre,Andorra,Андорра,Andorra,Andorra,Andorra
+AGO,Angola,Angola,Angola,Ангола,Angola,Angola,Angola
+AIA,Anguilla,Anguilla,Anguila,Ангилья,Anguilla,Anguila,Anguilla
+ATG,Antigua and Barbuda,Antigua et Barbuda,Antigua y Barbuda,Антигуа и Барбуда,Antigua und Barbuda,Antígua e Barbuda,Antigua e Barbuda
+ARG,Argentina,Argentine,Argentina,Аргентина,Argentinien,Argentina,Argentina
+ARM,Armenia,Arménie,Armenia,Армения,Armenien,Armênia,Armenia
+ABW,Aruba,Aruba,Aruba,Аруба,Aruba,Aruba,Aruba
+AUS,Australia,Australie,Australia,Австралия,Australien,Austrália,Australia
+AUT,Austria,Autriche,Austria,Австрия,Österreich,Áustria,Austria
+AZE,Azerbaijan,Azerbaïdjan,Azerbaiyán,Азербайджан,Aserbaidschan,Azerbaijão,Azerbaigian
+BHS,Bahamas,Bahamas,Bahamas,Багамские острова,Bahamas,Bahamas,Bahama
+BHR,Bahrain,Bahreïn,Bahréin,Бахрейн,Bahrain,Barém,Bahrain
+BGD,Bangladesh,Bangladesh,Bangladesh,Бангладеш,Bangladesch,Bangladeche,Bangladesh
+BRB,Barbados,Barbade,Barbados,Барбадос,Barbados,Barbados,Barbados
+BLR,Belarus,Bélarus,Bielorrusia,Беларусь,Belarus,Bielorrússia,Bielorussia
+BEL,Belgium,Belgique,Bélgica,Бельгия,Belgien,Bélgica,Belgio
+BLZ,Belize,Belize,Belice,Белиз,Belize,Belize,Belize
+BEN,Benin,Bénin,Benin,Бенин,Benin,Benim,Benin
+BMU,Bermuda,Bermudes,Bermuda,Бермудские острова,Bermuda,Bermudas,Bermuda
+BTN,Bhutan,Bhoutan,Bután,Бутан,Bhutan,Butão,Bhutan
+BOL,Bolivia,Bolivie,Bolivia,Боливия,Bolivien,Bolívia,Bolivia
+BIH,Bosnia and Herzegovina,Bosnie-Herzégovine,Bosnia y Herzegovina,Босния и Герцеговина,Bosnien und Herzegowina,Bósnia-Herzegovina,Bosnia-Erzegovina
+BWA,Botswana,Botswana,Botswana,Ботсвана,Botswana,Botsuana,Botswana
+BRA,Brazil,Brésil,Brasil,Бразилия,Brasilien,Brasil,Brasile
+BRN,Brunei Darussalam,Brunei Darussalam,Brunei Darussalam,Бруней-Даруссалам,Brunei Darussalam,Brunei,Brunei
+BGR,Bulgaria,Bulgarie,Bulgaria,Болгария,Bulgarien,Bulgária,Bulgaria
+BFA,Burkina Faso,Burkina Faso,Burkina Faso,Буркина-Фасо,Burkina Faso,Burquina Faso,Burkina Faso 
+BDI,Burundi,Burundi,Burundi,Бурунди,Burundi,Burundi,Burundi
+KHM,Cambodia,Cambodge,Camboya,Камбоджа,Kambodscha,Camboja,Cambogia
+CMR,Cameroon,Cameroun,Camerún,Камерун,Kamerun,Camarões,Camerun
+CAN,Canada,Canada,Canadá,Канада,Kanada,Canadá,Canada
+CPV,Cape Verde,Cap-Vert,Cabo verde,Кабо-Верде,Cape Verde,Cabo Verde,Capo Verde
+CYM,Cayman Islands,Iles Caïmanes,Islas Caimán,Каймановы острова,Cayman Islands,Ilhas Cayman,Isole Cayman
+CAF,Central African Republic,République centrafricaine,República Centroafricana,Центрально-Африканская Республика,Zentralafrikanische Republik,República Centro-Africana,Repubblica Centrafricana
+TCD,Chad,Tchad,Chad,Чад,Tschad,Chade,Ciad
+CHL,Chile,Chili,Chile,Чили,Chile,Chile,Cile
+CHN,China (People’s Republic of),Chine (République populaire de),China,Китай (Китайская Народная Республика),China (Volksrepublik),China (República Popular da),Cina
+COL,Colombia,Colombie,Colombia,Колумбия,Kolumbien,Colômbia,Colombia
+COM,Comoros,Archipel des Comores,Comoras,Коморские острова,Komoren,Comores,Comore
+COG,Congo,République du Congo,Congo,Конго,Kongo,Congo,Congo
+COK,Cook Islands,Iles Cook,Islas Cook,острова Кука,Cookinseln,Ilhas Cook,Isole Cook
+CRI,Costa Rica,Costa Rica,Costa Rica,Коста-Рика,Costa Rica,Costa Rica,Costa Rica
+HRV,Croatia,Croatie,Croacia,Хорватия,Kroatien,Croácia,Croazia
+CUB,Cuba,Cuba,Cuba,Куба,Kuba,Cuba,Cuba
+CYP,Cyprus,Chypre,Chipre,Кипр,Zypern,Chipre,Cipro
+CZE,Czech Republic,République tchèque,República Checa,Чешская республика,Tschechische Republik,República Tcheca,Repubblica Ceca
+CIV,Côte d'Ivoire,Côte-d'Ivoire,Côte d'Ivoire,Кот д'Ивуар,Côte d'Ivoire,Costa do Marfim,Costa d'Avorio
+PRK,Democratic People's Republic of Korea,République populaire démocratique de Corée,República Popular Democrática de Corea,Корейская Народно-Демократическая Республика,"Korea, Demokratische Volksrepublik",República Popular Democrática da Coreia,Corea del Nord
+COD,Democratic Republic of the Congo,République démocratique du Congo,República Democrática del Congo,Демократическая Республика Конго,Demokratische Republik Kongo,República Democrática do Congo,Repubblica Democratica del Congo
+DNK,Denmark,Danemark,Dinamarca,Дания,Dänemark,Dinamarca,Danimarca
+DJI,Djibouti,Djibouti,Djibouti,Джибути,Dschibuti,Djibuti,Gibuti
+DMA,Dominica,Dominique,Dominica,Доминика,Dominica,Domínica,Dominica
+DOM,Dominican Republic,République dominicaine,República Dominicana,Доминиканская Республика,Dominikanische Republik,República Dominicana,Repubblica Dominicana
+ECU,Ecuador,Equateur,Ecuador,Эквадор,Ecuador,Equador,Ecuador
+EGY,Egypt,Egypte,Egipto,Египет,Ägypten,Egito,Egitto
+SLV,El Salvador,El Salvador,El Salvador,Сальвадор,El Salvador,Salvador,El Salvador
+GNQ,Equatorial Guinea,Guinée équatoriale,Guinea Ecuatorial,Экваториальная Гвинея,Äquatorialguinea,Guiné Equatorial,Guinea Equatoriale
+ERI,Eritrea,Erythrée,Eritrea,Эритрея,Eritrea,Eritreia,Eritrea
+EST,Estonia,Estonie,Estonia,Эстония,Estland,Estônia,Estonia
+ETH,Ethiopia,Ethiopie,Etiopía,Эфиопия,Äthiopien,Etiópia,Etiopia
+EU,European Union,Union européenne,Unión Europea,Европейский Союз,Europäische Union,União Europeia,Unione Europea
+FRO,Faeroe Islands,Iles Féroé,Islas Feroe,Фарерские острова,Färöer-Inseln,Faroé,Isole Faroe
+FJI,Fiji,Fidji,Fiji,Фиджи,Fidschi,Fiji,Figi
+FIN,Finland,Finlande,Finlandia,Финляндия,Finnland,Finlândia,Finlandia
+MKD,Former Yugoslav Republic of Macedonia (FYROM),Ex-République yougoslave de Macédoine (ARYM),Antigua República Yugoslava de Macedonia (ARYM),Бывшая Югославская Республика Македония (БЮРМ),Die ehemalige jugoslawische Republik Mazedonien,República da Macedônia,Ex Repubblica Jugoslava di Macedonia
+FRA,France,France,Francia,Франция,Frankreich,França,Francia
+GUF,French Guiana,Guyane française,Guayana Francesa,французская Гвиана,Französisch-Guayana,Guiana Francesa,Guyana Francese
+GAB,Gabon,Gabon,Gabón,Габон,Gabun,Gabão,Gabon
+GMB,Gambia,Gambie,Gambia,Гамбия,Gambia,Gâmbia,Gambia
+GEO,Georgia,Géorgie,Georgia,Грузия,Georgien,Geórgia,Georgia
+DEU,Germany,Allemagne,Alemania,Германия,Deutschland,Alemanha,Germania
+GHA,Ghana,Ghana,Ghana,Гана,Ghana,Gana,Ghana
+GIB,Gibraltar,Gibraltar,Gibraltar,Гибралтар,Gibraltar,Gibraltar,Gibilterra
+GRC,Greece,Grèce,Grecia,Греция,Griechenland,Grécia,Grecia
+GRL,Greenland,Groenland,Groenlandia,Гренландия,Grönland,Groenlândia,Groenlandia
+GRD,Grenada,Grenade,Granada,Гренада,Grenada,Granada,Grenada
+GTM,Guatemala,Guatemala,Guatemala,Гватемала,Guatemala,Guatemala,Guatemala
+GGY,Guernsey,Guernsey,Guernsey,Гернси,Guernsey,Guernsey,Guernsey
+GIN,Guinea,Guinée,Guinea,Гвинея,Guinea,Guiné,Guinea
+GNB,Guinea-Bissau,Guinée-Bissau,Guinea-Bissau,Гвинея-Бисау,Guinea-Bissau,Guiné-Bissau,Guinea-Bissau
+GUY,Guyana,Guyane,Guayana,Гайана,Guyana,Guiana,Guyana
+HTI,Haiti,Haïti,Haití,Гаити,Haiti,Haiti,Haiti
+HND,Honduras,Honduras,Honduras,Гондурас,Honduras,Honduras,Honduras
+HKG,Hong Kong China,Hong Kong Chine,Hong Kong China,Гонконг Китай,Hongkong China,Hong Kong China,"Hong Kong, Cina"
+HUN,Hungary,Hongrie,Hungría,Венгрия,Ungarn,Hungria,Ungheria
+ISL,Iceland,Islande,Islandia,Исландия,Island,Islândia,Islanda
+IND,India,Inde,India,Индия,Indien,Índia,India
+IDN,Indonesia,Indonésie,Indonesia,Индонезия,Indonesien,Indonésia,Indonesia
+IRQ,Iraq,Iraq,Irak,Ирак,Irak,Iraque,Iraq
+IRL,Ireland,Irlande,Irlanda,Ирландия,Irland,Irlanda,Irlanda
+IRN,Islamic Republic of Iran,Iran (République islamique d'),República Islámica del Irán,Исламская Республика Иран,"Iran, Islamische Republik",República Islâmica do Irã,Repubblica Islamica dell'Iran
+IMN,Isle of Man,Ile of Man,Isla de Man,Остров Мэн,Insel Man,Ilha de Man,Isola di Man
+ISR,Israel,Israël,Israel,Израиль,Israel,Israel,Israele
+ITA,Italy,Italie,Italia,Италия,Italien,Itália,Italia
+JAM,Jamaica,Jamaïque,Jamaica,Ямайка,Jamaika,Jamaica,Giamaica
+JPN,Japan,Japon,Japón,Япония,Japan,Japão,Giappone
+JEY,Jersey,Jersey,Jersey,Джерси,Jersey,Jersey,Jersey
+JOR,Jordan,Jordanie,Jordania,Иордания,Jordanien,Jordânia,Giordania
+KAZ,Kazakhstan,Kazakhstan,Kazajstán,Казахстан,Kasachstan,Cazaquistão,Kazakistan
+KEN,Kenya,Kenya,Kenia,Кения,Kenya,Quênia,Kenya
+KIR,Kiribati,Kiribati,Kiribati,Кирибати,Kiribati,Quiribáti,Kiribati
+KOR,Korea,Corée (République de),Corea,Корея,"Korea, Republik",Coreia do Sul,Corea
+KWT,Kuwait,Koweït,Kuwait,Кувейт,Kuwait,Kuwait,Kuwait
+KGZ,Kyrgyzstan,Kirghizistan,Kirguistán,Киргизия,Kirgisistan,Quirguizistão,Kirghizistan
+LAO,Lao People's Democratic Republic,Lao (République démocratique populaire),República Democrática Popular Lao,Лаосская Народно-Демократическая Республика,"Laos, Demokratische Volksrepublik",Laos,Repubblica Popolare Democratica del Laos
+LVA,Latvia,Lettonie,Letonia,Латвия,Lettland,Letônia,Lettonia
+LBN,Lebanon,Liban,Líbano,Ливан,Libanon,Líbano,Libano
+LSO,Lesotho,Lesotho,Lesoto,Лесото,Lesotho,Lesoto,Lesotho
+LBR,Liberia,Liberia,Liberia,Либерия,Liberia,Libéria,Liberia
+LBY,Libya,Libye,Libia,Ливия,Libyen,Líbia,Libia
+LIE,Liechtenstein,Liechtenstein,Liechtenstein,Лихтенштейн,Liechtenstein,Liechtenstein,Liechtenstein
+LTU,Lithuania,Lituanie,Lituania,Литва,Litauen,Lituânia,Lituania
+LUX,Luxembourg,Luxembourg,Luxemburgo,Люксембург,Luxemburg,Luxemburgo,Lussemburgo
+MAC,Macao (China),Macao,Macao (China),Макао (Китай),Macau,Macau,Macao (Cina)
+MDG,Madagascar,Madagascar,Madagascar,Мадагаскар,Madagaskar,Madagáscar,Madagascar
+MWI,Malawi,Malawi,Malawi,Малави,Malawi,Malawi,Malawi
+MYS,Malaysia,Malaisie,Malasia,Малайзия,Malaysia,Malásia,Malaysia
+MDV,Maldives,Maldives,Maldivas,Мальдивы,Malediven,Maldivas,Maldive
+MLI,Mali,Mali,Mali,Мали,Mali,Mali,Mali
+MLT,Malta,Malte,Malta,Мальта,Malta,Malta,Malta
+MHL,Marshall Islands,Iles Marshall,Islas Marshall,Маршалловы острова,Marshallinseln,Ilhas Marshall,Isole Marshall
+MRT,Mauritania,Mauritanie,Mauritania,Мавритания,Mauretanien,Mauritânia,Mauritania
+MUS,Mauritius,Ile Maurice,Mauricio,Маврикий,Mauritius,Ilhas Maurício,Mauritius
+MYT,Mayotte,Mayotte,Mayotte,Майотта,Mayotte,Mayotte,Mayotte
+MEX,Mexico,Mexique,México,Мексика,Mexiko,México,Messico
+FSM,Micronesia (Federated States of),Micronésie République,Micronesia (Estados Federados de),Микронезия (Федеративные Штаты),"Mikronesien, Föderierte Staaten von",Micronésia (Estados Federados da),Stati Federati di Micronesia
+MDA,Moldova,Moldova,Moldavia,Молдова,Moldau,Moldávia,Moldavia
+MCO,Monaco,Monaco,Monaco,Монако,Monaco,Mônaco,Monaco
+MNG,Mongolia,Mongolie,Mongolia,Монголия,Mongolei,Mongólia,Mongolia
+MNE,Montenegro,Monténégro,Montenegro,Черногория,Montenegro,Montenegro,Montenegro
+MSR,Montserrat,Montserrat,Montserrat,Монтсеррат,Montserrat,Monserrate,Montserrat
+MAR,Morocco,Maroc,Marruecos,Марокко,Marokko,Marrocos,Marroco
+MOZ,Mozambique,Mozambique,Mozambique,Мозамбик,Mosambik,Moçambique,Mozambico
+MMR,Myanmar,Myanmar,Myanmar,Мьянма,Myanmar,Mianmar,Myanmar
+NAM,Namibia,Namibie,Namibia,Намибия,Namibia,Namíbia,Namibia
+NRU,Nauru,Nauru,Nauru,Науру,Nauru,Nauru,Nauru
+NPL,Nepal,Népal,Nepal,Непал,Nepal,Nepal,Nepal
+NLD,Netherlands,Pays-Bas,Países Bajos,Нидерланды,Niederlande ,Países Baixos,Paesi Bassi
+ANT,Netherlands Antilles,Antilles néerlandaises,Antillas Neerlandesas,Нидерландские Антильские острова,Niederländische Antillen,Antilhas Holandesas,Antille Olandesi
+NZL,New Zealand,Nouvelle-Zélande,Nueva Zelandia,Новая Зеландия,Neuseeland,Nova Zelândia,Nuova Zelanda
+NIC,Nicaragua,Nicaragua,Nicaragua,Никарагуа,Nicaragua ,Nicarágua,Nicaragua
+NER,Niger,Niger,Níger,Нигер,Niger,Níger,Niger
+NGA,Nigeria,Nigeria,Nigeria,Нигерия,Nigeria,Nigéria,Nigeria
+NIU,Niue,Niue,Niue,Ниуэ,Niue,Niue,Niue
+NOR,Norway,Norvège,Noruega,Норвегия,Norwegen,Noruega,Norvegia
+OMN,Oman,Oman,Omán,Оман,Oman,Omã,Oman
+PAK,Pakistan,Pakistan,Pakistán,Пакистан,Pakistan,Paquistão,Pakistan
+PLW,Palau,Palau,Palau,Палау,Palau,Palau,Palau
+PSE,Palestinian Administered Areas,Palestine,Territorios de Administración Palestina,Палестинская национальная администрация,Palästinensische Autonomiegebiete,Palestinian Administered Areas,Territori Palestinesi
+PAN,Panama,Panama,Panamá,Панама,Panama,Panamá,Panama
+PNG,Papua New Guinea,Papouasie Nouvelle-Guinée,Papua Nueva Guinea,Папуа-Новая Гвинея,Papua-Neuguinea,Papua Nova Guiné,Papua Nuova Guinea
+PRY,Paraguay,Paraguay,Paraguay,Парагвай,Paraguay,Paraguai,Paraguay
+PER,Peru,Pérou,Perú,Перу,Peru,Peru,Perù
+PHL,Philippines,Philippines,Filipinas,Филиппины,Philippinen,Filipinas,Filippine
+POL,Poland,Pologne,Polonia,Польша,Polen,Polónia,Polonia
+PRT,Portugal,Portugal,Portugal,Португалия,Portugal,Portugal,Portogallo
+PRI,Puerto Rico,Porto Rico,Puerto Rico,Пуэрто-Рико,Puerto Rico,Porto Rico,Puerto Rico
+QAT,Qatar,Qatar,Katar,Катар,Katar,Catar,Qatar
+ROU,Romania,Roumanie,Rumania,Румыния,Rumänien,Romênia,Romania
+RUS,Russian Federation,Russie,Federación de Rusia,Российская Федерация,Russische Föderation,Rússia,Federazione Russa
+RWA,Rwanda,Rwanda,Ruanda,Руанда,Ruanda,Ruanda,Ruanda
+SHN,Saint Helena,Sainte-Hélène,Santa Elena,Остров Святой Елены,St. Helena,Saint Helena,Sant'Elena
+KNA,Saint Kitts and Nevis,Saint Kitts and Nevis,Saint Kitts y Nevis,Сент-Китс и Невис,St. Kitts und Nevis,São Cristóvão e Nevis,Saint Kitts e Nevis
+LCA,Saint Lucia,Sainte-Lucie,Santa Lucía,Сент-Люсия,St. Lucia,Santa Lúcia,Saint Lucia
+VCT,Saint Vincent and the Grenadines,Saint-Vincent et Grenadines,San Vicente y las Granadinas,Сент-Винсент и Гренадины,St. Vincent und die Grenadinen,São Vicente e Granadinas,Saint Vincent e Grenadine
+WSM,Samoa,Samoa occidentales,Samoa,Самоа,Samoa,Samoa,Samoa
+SMR,San Marino,Saint-Marin,San Marino,Сан-Марино,San Marino,São Marinho,San Marino
+STP,Sao Tome and Principe,Sao Tomé-et-Principe,Santo Tomé y Príncipe,Сан-Томе и Принсипи,São Tomé und Príncipe,São Tomé e Príncipe,São Tomé e Príncipe
+SAU,Saudi Arabia,Arabie Saoudite,Arabia Saudita,Саудовская Аравия,Saudi-Arabien,Arábia Saudita,Arabia Saudita
+SEN,Senegal,Sénégal,Senegal,Сенегал,Senegal,Senegal,Senegal
+SRB,Serbia,Serbie,Serbia,Сербия,Serbien,Sérvia,Serbia
+SYC,Seychelles,Seychelles,Seychelles,Сейшельские острова,Seychellen,Seychelles,Seychelles
+SLE,Sierra Leone,Sierra Leone,Sierra Leona,Сьерра-Леоне,Sierra Leone,Serra Leoa,Sierra Leone
+SGP,Singapore,Singapour,Singapur,Сингапур,Singapur,Singapura,Singapore
+SVK,Slovak Republic,République slovaque,República Eslovaca,Словакия,Slowakei ,República Eslovaca,Repubblica Slovacca
+SVN,Slovenia,Slovénie,Eslovenia,Словения,Slowenien,Eslovenia,Slovenia
+SLB,Solomon Islands,Iles Salomon,Islas Salomón,Соломоновы острова,Salomonen,Ilhas Salomão,Isole Salomone
+SOM,Somalia,Somalie,Somalia,Сомали,Somalia,Somália,Somalia
+ZAF,South Africa,Afrique du Sud,Sudáfrica,ЮАР,Südafrika,África do Sul,Sudafrica
+ESP,Spain,Espagne,España,Испания,Spanien,Espanha,Spagna
+LKA,Sri Lanka,Sri Lanka,Sri Lanka,Шри Ланка,Sri Lanka,Sri Lanca,Sri Lanka
+SDN,Sudan,Soudan,Sudán,Судан,Sudan,Sudão,Sudan
+SUR,Suriname,Suriname,Surinam,Суринам,Suriname,Suriname,Suriname
+SWZ,Swaziland,Swaziland,Swazilandia,Свазиленд,Swasiland,Suazilândia,Swaziland
+SWE,Sweden,Suède,Suecia,Швеция,Schweden,Suécia,Svezia
+CHE,Switzerland,Suisse,Suiza,Швейцария,Schweiz,Suíça,Svizzera
+SYR,Syrian Arab Republic,République arabe syrienne,República Árabe Siria,Сирийская Арабская Республика,Arabische Republik Syrien,República Árabe da Síria,Siria
+TWN,Chinese Taipei,Taipei chinois,Taipei Chino,китайский Тайбэй,Chinese Taipei,Taipei chinês,Cina Taipei
+TZA,Tanzania,Tanzanie,Tanzania,Танзания,Tansania,Tanzânia,Tanzania
+THA,Thailand,Thaïlande,Tailandia,Таиланд,Thailand,Tailândia,Thailandia
+TLS,Timor-Leste,Timor-Leste,Timor-Leste,Восточный Тимор,Timor-Leste,Timor Leste,Timor Est
+TGO,Togo,Togo,Togo,Того,Togo,Togo,Togo
+TKL,Tokelau,Tokelau,Tokelau,Токелау,Tokelau,Tokelau,Tokelau
+TON,Tonga,Tonga,Tonga,Тонга,Tonga,Tonga,Tonga
+TTO,Trinidad and Tobago,Trinité et Tobago,Trinidad y Tobago,Тринидад и Тобаго,Trinidad und Tobago,Trinidade e Tobago,Trinidad e Tobago
+TUN,Tunisia,Tunisie,Túnez,Тунис,Tunesien,Tunísia,Tunisia
+TUR,Turkey,Turquie,Turquía,Турция,Türkei,Turquia,Turchia
+TKM,Turkmenistan,Turkménistan,Turkmenistán,Туркменистан,Turkmenistan,Turquemenistão,Turkmenistan
+TCA,Turks and Caicos Islands,Iles Turques et Caïques,Islas Turcas y Caicos,Острова Теркс и Кайкос,Turks- und Caicosinseln,Ilhas Turks e Caicos,Turks e Caicos
+TUV,Tuvalu,Tuvalu,Tuvalu,Тувалу,Tuvalu,Tuvalu,Tuvalu
+UGA,Uganda,Ouganda,Uganda,Уганда,Uganda,Uganda,Uganda
+UKR,Ukraine,Ukraine,Ucrania,Украина,Ukraine,Ucrânia,Ucraina
+ARE,United Arab Emirates,Emirats arabes unis,Emiratos Árabes Unidos,Объединенные Арабские Эмираты,Vereinigte Arabische Emirate,Emiratos Árabes Unidos,Emirati Arabi Uniti
+GBR,United Kingdom,Royaume-Uni,Reino Unido,Великобритания,Vereinigtes Königreich,Reino Unido,Regno Unito
+USA,United States,Etats-Unis,Estados Unidos,США,Vereinigte Staaten,Estados Unidos,Stati Uniti
+VIR,United States Virgin Islands,Iles Vierges américaines,Islas Vírgenes de Estados Unidos,Виргинские острова Соединенных Штатов,Amerikanische Jungferninseln,Ilhas Virgens Americanas,Isole Vergini Americane
+URY,Uruguay,Uruguay,Uruguay,Уругвай,Uruguay,Uruguai,Uruguay
+UZB,Uzbekistan,Ouzbékistan,Uzbekistán,Узбекистан,Usbekistan,Usbequistão,Uzbekistan
+VUT,Vanuatu,Vanuatu,Vanuatu,Вануату,Vanuatu,Vanuatu,Vanuatu
+VEN,Venezuela,Venezuela,Venezuela,Венесуэла,Venezuela,Venezuela,Venezuela
+VNM,Vietnam,Vietnam,Vietnam,Вьетнам,Vietnam,Vietnã,Vietnam
+VGB,Virgin Islands (UK),Iles Vierges britanniques,Islas Vírgenes (RU),Виргинские острова,Britische Jungferninseln,Ilhas Virgens Britânicas,Isole Vergini Britanniche
+WLF,Wallis and Futuna Islands,Iles Wallis et Futuna,Islas Wallis y Futuna,Уоллис и Футуна,Wallis und Futuna,Ilhas Wallis e Futuna,Wallis e Futuna
+YEM,Yemen,Yémen,Yemen,Йемен,Jemen,Iémen,Yemen
+ZMB,Zambia,Zambie,Zambia,Замбия,Sambia ,Zâmbia,Zambia
+ZWE,Zimbabwe,Zimbabwe,Zimbabue,Зимбабве,Simbabwe ,Zimbábue,Zimbabwe
+TJK,Tajikistan,Tadjikistan,Tayikistán,Таджикистан,Tadschikistan,Tajiquistão,Tagikistan

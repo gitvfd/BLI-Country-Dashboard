@@ -45,7 +45,7 @@
             .attr("class", "axis parallel")
             .each(function(d) { d3.select(this).call(yAxisPar.scale(d.scale)); })
           .append("text")
-            .attr("class", function(){ 
+            .attr("id", function(){ 
               i++; 
               return"nbrUsers" +i ;
             })
@@ -76,19 +76,7 @@
           }
 
           d3.selectAll("#paraLineNameYear")
-            .text(function(){
-              if(d.variable=="Housing"){return"Housing";}
-              if(d.variable=="Income"){return"Income";}
-              if(d.variable=="Jobs"){return"Jobs";}
-              if(d.variable=="Community"){return"Community";}
-              if(d.variable=="Education"){return"Education";}
-              if(d.variable=="Environment"){return"Environment";}
-              if(d.variable=="CivicEngagement"){return"Civic Engagement";}
-              if(d.variable=="Health"){return"Health";}
-              if(d.variable=="LifeSatisfaction"){return"Life Satisfaction";}
-              if(d.variable=="Safety"){return"Safety";}
-              if(d.variable=="WorkLifeBalance"){return"Work-Life Balance";}
-            });
+            .text(langTopicName(d.variable));
 
           parallelYearChart.append("png:image")
             .attr("id","topicIconYear")
