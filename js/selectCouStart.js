@@ -18,8 +18,8 @@ function selectCouStart(){
         	document.cookie = 'ISO=' + ISO;
     		}   
 	})
-
-	console.log(couName);
+console.log(lang)
+console.log(couName)
 
 	if(couName==undefined){
 			var ISO="ITA";
