@@ -64,6 +64,6 @@ console.log(couName)
 	if(lang=="en"||lang=="fr"||lang=="de"||lang=="es"){
 	    setTimeout(function(){
 	    	window.lang.change(lang) ; label2update(); 
-	    },1000)
+	    },1500)
 	}
 }
