@@ -18,8 +18,7 @@ function selectCouStart(){
         	document.cookie = 'ISO=' + ISO;
     		}   
 	})
-console.log(lang)
-console.log(couName)
+
 
 	if(couName==undefined){
 			var ISO="ITA";
@@ -64,6 +63,6 @@ console.log(couName)
 	if(lang=="en"||lang=="fr"||lang=="de"||lang=="es"){
 	    setTimeout(function(){
 	    	window.lang.change(lang) ; label2update(); 
-	    },1500)
+	    },2000)
 	}
 }
