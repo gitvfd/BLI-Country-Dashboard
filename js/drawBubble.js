@@ -14,9 +14,10 @@ var format = d3.format(",d");
 
 var pack = d3.layout.pack()
     .sort(null)
-    .size([width , height ])
-    .value(function(d){ return d.population * d.population; })
-    .padding(3);
+    .size([1*width, 1*height])
+    .value(function(d){ return Math.PI*d.population * d.population; })
+    //.radius(function(d){ return Math.PI*d.population * d.population;})
+    .padding(8);
 
 
 
@@ -51,11 +52,14 @@ function createDataSet(dataTemp){
           countryCode.forEach(function(k) {
             if(d.country == k.ISO ){
               temp = k.country;
+              temp_fr = k.country_fr;
+              temp_es = k.country_es;
+              temp_de = k.country_de;
             }   
           }); 
-          test.push({ISO:d.country,population:d.population,country:temp}) 
+          test.push({ISO:d.country,population:d.population,country:temp,country_fr:temp_fr,country_es:temp_es,country_de:temp_de}) 
       });
-
+        
   drawBubbles(test)
   return test;
   });
@@ -70,7 +74,7 @@ function drawBubbles(data){
       .attr("x", function(d) { return d.x; })
       .attr("y", function(d) { return d.y; })   
       //.attr("font-family", "sans-serif")
-      .attr("font-size", function(d) {  return Math.pow(d.r,0.8)+"px"; })
+      .attr("font-size", function(d) {  return Math.pow(d.r,0.9)+"px"; })
       .text(function(d) { return d.ISO; });
 
   bubbleFrame.selectAll("circle")
@@ -83,11 +87,25 @@ function drawBubbles(data){
       .attr("cy", function(d) { return d.y; })
       .attr("opacity",0.5)
       .on("mouseover", function(d){
+
         d3.selectAll("circle."+d.country.split(' ').join('.'))
         .style("opacity",0.2);;
 
         d3.selectAll(".countryName")
-        .text(d.country);
+        .text(function(){
+          if(getCookie("langCookie")=="en"){
+            return d.country
+          }
+          else if (getCookie("langCookie")=="fr"){
+            return d.country_fr
+          }
+          else if (getCookie("langCookie")=="es"){
+            return d.country_es
+          }
+          else if (getCookie("langCookie")=="de"){
+            return d.country_de
+          }
+        });
 
         d3.selectAll(".popTot")
         .text(format(d.population));
@@ -110,14 +128,42 @@ function drawBubbles(data){
         .style("fill","#ED8074")
         .attr("opacity",0.5);
 
+        document.cookie = 'ISO=' + d.ISO;
+        
         d3.selectAll("#selectedCou")
-        .text(d.country);
+        .text(function(){
+          if(getCookie("langCookie")=="en"){
+            return d.country
+          }
+          else if (getCookie("langCookie")=="fr"){
+            return d.country_fr
+          }
+          else if (getCookie("langCookie")=="es"){
+            return d.country_es
+          }
+          else if (getCookie("langCookie")=="de"){
+            return d.country_de
+          }
+        });
         
         d3.selectAll("#numberAnswerSelection")
         .text(d.population);
         
         d3.selectAll("#couToUpdate")
-        .text(d.country);
+        .text(function(){
+          if(getCookie("langCookie")=="en"){
+            return d.country
+          }
+          else if (getCookie("langCookie")=="fr"){
+            return d.country_fr
+          }
+          else if (getCookie("langCookie")=="es"){
+            return d.country_es
+          }
+          else if (getCookie("langCookie")=="de"){
+            return d.country_de
+          }
+        });
 
 		/**d3.select("#spiderPref")
 			.selectAll("#couToUpdate")

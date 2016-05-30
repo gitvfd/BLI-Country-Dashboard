@@ -1,0 +1,37 @@
+{
+	"token": {
+"The":"L'",
+"has been collecting feedback from visitors since its launch in 2011. What part does gender or age play in our choices? Do our preferences change over time? This dashboard provides insight on what people have shared in 21 countries from where we have received over 1,000 responses.":" a collecté les réponses des visiteurs depuis son lancement en 2011. Quel rôle ont le sexe ou la tranche d'âge dans nos choix? Est-ce que nos préférences évoluent au fil du temps? Ce tableau de bord donne un aperçu de ce que les gens ont partagé dans 21 pays où nous avons reçu plus de 1000 réponses.",
+"OECD's Better Life Index":"indicateur du vivre mieux",
+"http://wwww.oecdbetterlifeindex.org":"http://wwww.oecdbetterlifeindex.org/fr",
+"responses":"réponses",
+"Pick a country":"Sélectionnez un pays",
+"The bubble size reflects the number of responses from that country":"La taille des bulles indiquent le nombre de réponses reçus pour un pays donné",
+"Clicking on a country will update all the charts. They will provide you with interesting insights on some of the people living in this country and their well-being preferences.":"Cliquer sur un pays met à jour toutes les informations sur ce site. Vous découvrirez des informations passionantes sur les personnes qui vivent dans les pays et ce qui leur importe pour vivre mieux.",
+"The red squares indicate the proportion of answers from the selected country in comparison to the total number of responses to the Better Life Index":"Les carrés rouges représentent la proportion de réponses de la part du pays sélectionné par rapport au nombre total de réponses au  \"Better Life Index\".",
+"Gender and Age distribution":"Âge et genre",
+"Number":"En nombre",
+"Demographic profile of the people who have shared their index":"Profil démographique des personnes ayant partagé leur index",
+"Importance of the topics":"Importance du thème",
+"In percentage":"En pourcentage",
+"Relative importance of topics over time":"Importance relative des thèmes au cours du temps",
+"In percentage":"En pourcentage",
+"See how the importance attributed to each topic evolves over time":"Voyez comment l'importance accordée à chaque thème évolue au fil du temps",
+		"Relative importance of topics by age":"Importance relative des thèmes par tranche d'âge",
+		"In percentage":"En pourcentage",
+		"See how age can impact the relative importance of the topics":"Voyez comment l'âge influe sur l'importance accordée à chaque thème",
+		"Relative importance of topics by gender":"Importance relative des thèmes par genre ",
+		"In percentage":"En pourcentage ",
+		"See how gender can impact the relative importance of the topics":" Voyez comment le genre influe sur l'importance accordée à chaque thème",
+		"Now it's your turn! Tell us what":" A votre tour! Dites- nous, ce que ",
+		"YOU":" Vous",
+		"think makes for a better life! Share your preferences with us and help improve policies that really matter to you!":" pensez. Partagez vos préférences avec nous et, ainsi, aider à améliorer les politiques qui vous importent!",
+		"How does one country's priorities compare to well-being preferences worldwide?":"Voyez si un pays à des priorités différentes sur la question du vivre mieux que l'ensemble des répondants."
+
+		},
+	"regex": [
+		["Budget", ""],
+		["^Something at start of text", ""],
+		["This will be case insensitive", "i", ""]
+	]
+}

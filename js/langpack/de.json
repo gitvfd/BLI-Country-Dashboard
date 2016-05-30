@@ -1,0 +1,37 @@
+{
+	"token": {
+"The":"Der",
+"has been collecting feedback from visitors since its launch in 2011. What part does gender or age play in our choices? Do our preferences change over time? This dashboard provides insight on what people have shared in 21 countries from where we have received over 1,000 responses.":"sammelte seit seiner Einführung 2011 Feedbacks der Besucher. Welche Rolle spielen Geschlecht oder Alter in unseren Entscheidungen? Verändern sich unsere Präferenzen über die Zeit? Dieses Dashboard gewährt einen Einblick in die Antworten von Menschen aus den 21 Ländern, von denen wir mehr als 1.000 Rückmeldungen bekommen haben",
+"OECD's Better Life Index":"OECD's Better Life Index",
+"http://www.oecdbetterlifeindex.org":"http://wwww.oecdbetterlifeindex.org/de",
+"responses":"Antworten",
+"Pick a country":"Wähle ein Land",
+"The bubble size reflects the number of responses from that country":"Die Größe der Punkte steht für die Anzahl der Antworten aus dem Land.",
+"Clicking on a country will update all the charts. They will provide you with interesting insights on some of the people living in this country and their well-being preferences.":"Beim Klick auf ein Land werden die Charts aktualisiert. Sie gewähren dir einen interessanten Einblick auf einige Leute aus diesem Land und was für ihr Wohlbefinden am wichtigsten ist.",
+"The red squares indicate the proportion of answers from the selected country in comparison to the total number of responses to the Better Life Index":"Die roten Kästchen weisen auf die Anzahl der Antworten aus dem gewählten Land, verglichen mit der gesamten Anzahl an Rückmeldungen zum Better Life Index.",
+"Gender and Age distribution":"Geschlechter- und Altersverteilung",
+"Number":"Anzahl",
+"Demographic profile of the people who have shared their index":"Demografisches Profil jener Menschen, die ihren Index geteilt haben.",
+"Importance of the topics":"Stellenwert der Themen",
+"In percentage":"In Prozent",
+"Relative importance of topics over time":"Relativer Stellenwert der Themen über die Zeit",
+"In percentage":"In Prozent",
+"See how the importance attributed to each topic evolves over time":"Sieh nach, wie sich der Stellenwert der Themen über die Zeit entwickelt hat.",
+		"Relative importance of topics by age":" Relativer Stellenwert der Themen nach Alter",
+		"In percentage":" In Prozent",
+		"See how age can impact the relative importance of the topics":" Sieh, wie sich das Alter auf den relativen Stellenwert auswirkt",
+		"Relative importance of topics by gender":"Relativer Stellenwert nach Geschlecht",
+		"In percentage":"In Prozent ",
+		"See how gender can impact the relative importance of the topics":" Sieh, wie sich das Geschlecht auf den relativen Stellenwert auswirkt",
+		"Now it's your turn! Tell us what":" Jetzt bist du dran! Erzähl uns, was",
+		"YOU":" DU",
+		"think makes for a better life! Share your preferences with us and help improve policies that really matter to you!":"denkst, was ein besseres Leben ausmacht! Teile deine Meinung mit uns und hilf mit zu verbessern, was dir wichtig ist! ",
+		"How does one country's priorities compare to well-being preferences worldwide?":"Wie verhalten sich die Prioritäten eines Landes verglichen mit den weltweiten Antworten zum Wohlbefinden?"
+
+		},
+	"regex": [
+		["Budget", ""],
+		["^Something at start of text", ""],
+		["This will be case insensitive", "i", ""]
+	]
+}

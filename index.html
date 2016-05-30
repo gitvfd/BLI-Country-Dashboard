@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<meta http-equiv="content-type" content="text/html; charset=UTF8">
+<meta lang="en" http-equiv="content-type" content="text/html; charset=UTF8">
 <html>
   <head>
     <title>BLI Dashboard</title>
@@ -10,23 +10,32 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.js"></script>
-
+    <script src="js/js.cookie.js" charset="utf-8" type="text/javascript"></script>
+    <script src="js/jquery-lang.js" charset="utf-8" type="text/javascript"></script>
 
     <link rel="stylesheet" type="text/css" href="css/dashboard.css">
 
   </head>
   <body>
-    
+    <nav class="nav-meta">
+    <ul class="nav-meta__language"><!-- https://github.com/Irrelon/jquery-lang-js/blob/master/index.html-->
+      <li><a  href="#" onclick="window.lang.change('en') ; label2update(); return false; ">English</a></li>
+      <li><a  href="#" onclick="window.lang.change('es') ; label2update(); return false;">Español</a></li>
+      <li><a  href="#" onclick="window.lang.change('fr') ; label2update(); return false;">Français</a></li>
+      <li><a  href="#" onclick="window.lang.change('de') ; label2update(); return false;">Deutsch</a></li>
+    </ul>
+  </nav>
+  <br>
     <img  id="logo" src="img/BLI-logo.png"></img>
     <div id="intro">
-      <h2 id="intro">The <a href="http://www.oecdbetterlifeindex.org" target="_blank">OECD's Better Life Index</a> has been collecting feedback from visitors since its launch in 2011. What part does gender or age play in our choices? Do our preferences change over time? This dashboard provides insight on what people have shared in 21 countries from where we have received over 1,000 responses.</h2>
+      <h2 id="intro" lang="en">The <a href="http://www.oecdbetterlifeindex.org" target="_blank" lang="en">OECD's Better Life Index</a> has been collecting feedback from visitors since its launch in 2011. What part does gender or age play in our choices? Do our preferences change over time? This dashboard provides insight on what people have shared in 21 countries from where we have received over 1,000 responses.</h2>
     </div>
     <br>
-    <div ><span id="selectedCou">Total</span>: <span id="numberAnswerSelection"></span> <span id="wordDesign">responses</span></div>
+    <div ><span id="selectedCou" >Total</span>: <span id="numberAnswerSelection" ></span> <span id="wordDesign"  lang="en">responses</span></div>
     <hr class="dotted">
-    <h1 class="title">Pick a country</h1>
-    <h2 class="subtitle">The bubble size reflects the number of responses from that country</h2>
-    <p class="explanation">Clicking on a country will update all the charts. They will provide you with interesting insights on some of the people living in this country and their well-being preferences.<br/>
+    <h1 class="title" lang="en">Pick a country</h1>
+    <h2 class="subtitle" lang="en">The bubble size reflects the number of responses from that country</h2>
+    <p class="explanation" lang="en">Clicking on a country will update all the charts. They will provide you with interesting insights on some of the people living in this country and their well-being preferences.<br/>
     The red squares indicate the proportion of answers from the selected country in comparison to the total number of responses to the Better Life Index</p>
 
     <div class="bubbleDiv" id="bubble"></div>
@@ -34,37 +43,37 @@
       <div id="distriUserLegend"></div>
       <div id="distriUser"></div>
     <hr class="dotted">
-    <h1 class="title">Gender and Age distribution</h1>
-    <h2 class="subtitle">Number</h2>
-    <p class="explanation">Demographic profile of the people who have shared their index</p>
+    <h1 class="title" lang="en">Gender and Age distribution</h1>
+    <h2 class="subtitle" lang="en">Number</h2>
+    <p class="explanation" lang="en">Demographic profile of the people who have shared their index</p>
     <div id="donutGenderDistri"></div>
     <div id="barAgeDistri"></div>
     <hr class="dotted">
-    <h1 class="title">Importance of the topics</h1>
-    <h2 class="subtitle">In percentage</h2>
-    <p class="explanation"></p>
-    <div class="keyFact">How does one country's priorities compare to well-being preferences worldwide?<br/><img class="keyFactIcon" src="img/preferenceIcon.svg" alt="overtime"></div>
+    <h1 class="title" lang="en">Importance of the topics</h1>
+    <h2 class="subtitle" lang="en">In percentage</h2>
+    <p class="explanation" lang="en"></p>
+    <div class="keyFact" lang="en">How does one country's priorities compare to well-being preferences worldwide?<br/><img class="keyFactIcon" src="img/preferenceIcon.svg" alt="overtime"></div>
     <div id="spiderPref"></div>
     <hr class="dotted">
-    <h1 class="title">Relative importance of topics over time</h1>
-    <h2 class="subtitle">In percentage</h2>
+    <h1 class="title" lang="en">Relative importance of topics over time</h1>
+    <h2 class="subtitle" lang="en">In percentage</h2>
     <p class="explanation"></p>
-    <div class="keyFact">See how the importance attributed to each topic evolves over time<Br><img class="keyFactIcon" src="img/timeIcon.svg" alt="overtime"></div>    
+    <div class="keyFact" lang="en">See how the importance attributed to each topic evolves over time<Br><img class="keyFactIcon" src="img/timeIcon.svg" alt="overtime"></div>    
     <div id="parallelYear"></div>
     <hr class="dotted">
-    <h1 class="title">Relative importance of topics by age</h1>
-    <h2 class="subtitle">In percentage</h2>
+    <h1 class="title" lang="en">Relative importance of topics by age</h1>
+    <h2 class="subtitle" lang="en">In percentage</h2>
     <p class="explanation"></p>
-    <div class="keyFact">See how age can impact the relative importance of the topics <Br><img class="keyFactIcon" src="img/age2.svg" alt="overtime"></div>
+    <div class="keyFact" lang="en">See how age can impact the relative importance of the topics <Br><img class="keyFactIcon" src="img/age2.svg" alt="overtime"></div>
     <div id="parallelAge"></div>
     <hr class="dotted">
-    <h1 class="title">Relative importance of topics by gender</h1>
-    <h2 class="subtitle">In percentage</h2>
+    <h1 class="title" lang="en">Relative importance of topics by gender</h1>
+    <h2 class="subtitle" lang="en">In percentage</h2>
     <p class="explanation"></p>
-    <div class="keyFactGender">See how gender can impact the relative importance of the topics <Br><img class="keyFactIcon" src="img/gender2.svg" alt="overtime"></div>
+    <div class="keyFactGender" lang="en">See how gender can impact the relative importance of the topics <Br><img class="keyFactIcon" src="img/gender2.svg" alt="overtime"></div>
     <div id="parallelGender"></div>
     <hr class="dotted">
-      <h2 id="intro">Now it's your turn! Tell us what <b>YOU</b> think makes for a better life! Share your preferences with us and help improve policies that really matter to you!    </h2>
+      <h2 id="intro" lang="en">Now it's your turn! Tell us what <b lang="en">YOU</b> think makes for a better life! Share your preferences with us and help improve policies that really matter to you!    </h2>
     <iframe id="embedBLI"  src="http://gitvfd.github.io/BLI-2016-EN" seamless></iframe>
     <!-- OPTIONAL 
     <br>
@@ -93,6 +102,7 @@
     <script src="js/squareChartUpdate.js"></script>
     <script src="js/selectCouStart.js"></script>
     <script src="js/drawBubble.js"></script>
+    <script src="js/langPack/chartTranslation.js"></script>
     <!--<script src="js/numberAnswersStart.js"></script>
     <script src="js/d3.layout.cloud.js"></script>
     <script src="js/streamline.js"></script>
@@ -105,6 +115,28 @@
 
 
     <script type="text/javascript">
+    var lang = new Lang();
+    lang.dynamic('fr', 'js/langpack/fr.json');
+    lang.dynamic('es', 'js/langpack/es.json');
+    lang.dynamic('de', 'js/langpack/de.json');
+    lang.init({
+      defaultLang: 'en'
+    });
+
+    function getCookie(cname) {
+      var name = cname + "=";
+      var ca = document.cookie.split(';');
+      for(var i = 0; i < ca.length; i++) {
+          var c = ca[i];
+          while (c.charAt(0) == ' ') {
+              c = c.substring(1);
+          }
+          if (c.indexOf(name) == 0) {
+              return c.substring(name.length, c.length);
+          }
+      }
+      return "";
+    }
 
     /** SET UP SQUARE SVG **/
       var mobileScreen = ($( window ).innerWidth() < 500 ? true : false);
@@ -433,6 +465,7 @@
     parallelYear();
     parallelAge();
     parallelGender();
+    
     spiderChart("Total");
     //wordleChart("Total");
 
