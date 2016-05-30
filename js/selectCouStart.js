@@ -19,11 +19,14 @@ function selectCouStart(){
     		}   
 	})
 
+	console.log(couName);
+
 	if(couName==undefined){
 			var ISO="ITA";
 			var couName="Italy";
         	document.cookie = 'ISO=' + "ITA";
 	}
+	
 	//To create dedicated URL for country add /?ISO at the end of the URL extract the last 3 characters that give ISO and then find corresponding name
 	//var ISO="ITA";
 	//var couName="Italy";
